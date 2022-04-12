@@ -33,7 +33,7 @@ import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 public class ReportUtils {
 	
 	//Base path for report template
-    private String baseReportsPath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath() + "/WEB-INF/reports/";
+    private final String baseReportsPath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath() + "/WEB-INF/reports/";
 
     /**
      * Get database connection, call report generation method and export's report to Vaadin's FileDownloader

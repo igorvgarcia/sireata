@@ -351,7 +351,7 @@ public class LdapUtils {
 	 */
 	public List<String> getLdapOuByUid(String uid, String baseDn) throws NamingException {
 		List<String> ouList = new ArrayList<String>();
-		String split[];
+		String[] split;
 
 		baseDn = baseDn.trim().toUpperCase();
 
@@ -404,7 +404,7 @@ public class LdapUtils {
 				while (values.hasMore()) {
 					String attributeValue = values.next().toString();
 					// System.out.println(attributeValue);
-					String split[] = attributeValue.split(":");
+					String[] split = attributeValue.split(":");
 
 					if (split.length == 2) {
 						mapa.put(split[0].trim(), split[1].trim());
@@ -460,7 +460,7 @@ public class LdapUtils {
 
 				while (values.hasMore()) {
 					String attributeValue = values.next().toString();
-					String split[] = attributeValue.split(":");
+					String[] split = attributeValue.split(":");
 
 					if (split.length == 2) {
 						if (split[0].equals(varUid)) {
