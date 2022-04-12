@@ -11,10 +11,10 @@ import org.apache.tomcat.jdbc.pool.PoolProperties;
 
 public class ConnectionDAO {
 	
-	private final String SERVER = "192.168.56.20";
-	private final String DATABASE = "diget";
-	private final String USER = "mysql";
-	private final String PASSWORD = "mysql";
+	private String SERVER = "192.168.56.20";
+	private String DATABASE = "diget";
+	private String USER = "mysql";
+	private String PASSWORD = "mysql";
 	
 	private DataSource datasource = null;
 	private static ConnectionDAO instance = null;

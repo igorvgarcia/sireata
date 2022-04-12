@@ -81,7 +81,11 @@ public class Usuario {
     public boolean equals(final Object object) {
         if (!(object instanceof Usuario)) {
             return false;
-        }else return this.getIdUsuario() == ((Usuario) object).getIdUsuario();
+        }else if(this.getIdUsuario() == ((Usuario)object).getIdUsuario()){
+        	return true;
+        }else{
+        	return false;
+        }
     }
 
 }
