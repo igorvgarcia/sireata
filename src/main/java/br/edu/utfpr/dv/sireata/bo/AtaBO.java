@@ -1,5 +1,21 @@
 package br.edu.utfpr.dv.sireata.bo;
 
+import br.edu.utfpr.dv.sireata.dao.AnexoDAO;
+import br.edu.utfpr.dv.sireata.dao.AtaDAO;
+import br.edu.utfpr.dv.sireata.dao.AtaParticipanteDAO;
+import br.edu.utfpr.dv.sireata.dao.OrgaoDAO;
+import br.edu.utfpr.dv.sireata.dao.PautaDAO;
+import br.edu.utfpr.dv.sireata.model.Anexo;
+import br.edu.utfpr.dv.sireata.model.Ata;
+import br.edu.utfpr.dv.sireata.model.Ata.TipoAta;
+import br.edu.utfpr.dv.sireata.model.AtaParticipante;
+import br.edu.utfpr.dv.sireata.model.AtaReport;
+import br.edu.utfpr.dv.sireata.model.Orgao;
+import br.edu.utfpr.dv.sireata.model.ParticipanteReport;
+import br.edu.utfpr.dv.sireata.model.Pauta;
+import br.edu.utfpr.dv.sireata.util.DateUtils;
+import br.edu.utfpr.dv.sireata.util.ReportUtils;
+import br.edu.utfpr.dv.sireata.util.StringUtils;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.text.DecimalFormat;
@@ -8,26 +24,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
-
-import br.edu.utfpr.dv.sireata.dao.AnexoDAO;
-import br.edu.utfpr.dv.sireata.dao.AtaDAO;
-import br.edu.utfpr.dv.sireata.dao.AtaParticipanteDAO;
-import br.edu.utfpr.dv.sireata.dao.OrgaoDAO;
-import br.edu.utfpr.dv.sireata.dao.PautaDAO;
-import br.edu.utfpr.dv.sireata.model.Anexo;
-import br.edu.utfpr.dv.sireata.model.Ata;
-import br.edu.utfpr.dv.sireata.model.Pauta;
-import br.edu.utfpr.dv.sireata.util.DateUtils;
-import br.edu.utfpr.dv.sireata.util.ReportUtils;
-import br.edu.utfpr.dv.sireata.util.StringUtils;
-import br.edu.utfpr.dv.sireata.model.Ata.TipoAta;
-import br.edu.utfpr.dv.sireata.model.AtaParticipante;
-import br.edu.utfpr.dv.sireata.model.AtaReport;
-import br.edu.utfpr.dv.sireata.model.Orgao;
-import br.edu.utfpr.dv.sireata.model.ParticipanteReport;
 
 public class AtaBO {
 	

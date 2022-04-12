@@ -1,24 +1,5 @@
 package br.edu.utfpr.dv.sireata.view;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import org.vaadin.dialogs.ConfirmDialog;
-
-import com.vaadin.data.Property.ValueChangeEvent;
-import com.vaadin.data.Property.ValueChangeListener;
-import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.server.FontAwesome;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.UI;
-import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.renderers.DateRenderer;
-import com.vaadin.ui.themes.ValoTheme;
-
 import br.edu.utfpr.dv.sireata.Session;
 import br.edu.utfpr.dv.sireata.bo.AtaBO;
 import br.edu.utfpr.dv.sireata.component.ComboCampus;
@@ -28,6 +9,22 @@ import br.edu.utfpr.dv.sireata.component.ComboOrgao;
 import br.edu.utfpr.dv.sireata.model.Ata;
 import br.edu.utfpr.dv.sireata.util.DateUtils;
 import br.edu.utfpr.dv.sireata.window.EditarAtaWindow;
+import com.vaadin.data.Property.ValueChangeEvent;
+import com.vaadin.data.Property.ValueChangeListener;
+import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
+import com.vaadin.server.FontAwesome;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Notification;
+import com.vaadin.ui.UI;
+import com.vaadin.ui.renderers.DateRenderer;
+import com.vaadin.ui.themes.ValoTheme;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.vaadin.dialogs.ConfirmDialog;
 
 public class AtaView extends ListView {
 	

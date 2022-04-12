@@ -1,14 +1,12 @@
 package br.edu.utfpr.dv.sireata.window;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.PasswordField;
-
 import br.edu.utfpr.dv.sireata.Session;
 import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
 import br.edu.utfpr.dv.sireata.model.Usuario;
+import com.vaadin.ui.Notification;
+import com.vaadin.ui.PasswordField;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class EditarSenhaWindow extends EditarWindow {
 	

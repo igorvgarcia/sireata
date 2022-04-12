@@ -1,21 +1,17 @@
 package br.edu.utfpr.dv.sireata.window;
 
-import java.util.UUID;
-
-import com.vaadin.server.FontAwesome;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Window;
-import com.vaadin.ui.themes.ValoTheme;
-
 import br.edu.utfpr.dv.sireata.Session;
 import br.edu.utfpr.dv.sireata.view.ListView;
 import br.edu.utfpr.dv.sireata.view.PDFView;
-
+import com.vaadin.server.FontAwesome;
+import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
-
 import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.Window;
+import com.vaadin.ui.themes.ValoTheme;
+import java.util.UUID;
 
 public abstract class EditarWindow extends Window {
 

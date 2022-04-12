@@ -1,11 +1,10 @@
 package br.edu.utfpr.dv.sireata.bo;
 
+import br.edu.utfpr.dv.sireata.dao.AnexoDAO;
+import br.edu.utfpr.dv.sireata.model.Anexo;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import br.edu.utfpr.dv.sireata.dao.AnexoDAO;
-import br.edu.utfpr.dv.sireata.model.Anexo;
 
 public class AnexoBO {
 

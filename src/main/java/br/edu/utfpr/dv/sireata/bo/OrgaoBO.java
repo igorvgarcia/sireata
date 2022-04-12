@@ -1,13 +1,12 @@
 package br.edu.utfpr.dv.sireata.bo;
 
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import br.edu.utfpr.dv.sireata.dao.OrgaoDAO;
 import br.edu.utfpr.dv.sireata.model.Orgao;
 import br.edu.utfpr.dv.sireata.model.OrgaoMembro;
 import br.edu.utfpr.dv.sireata.model.Usuario;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class OrgaoBO {
 	

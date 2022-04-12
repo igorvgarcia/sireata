@@ -1,21 +1,19 @@
 package br.edu.utfpr.dv.sireata.window;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import br.edu.utfpr.dv.sireata.bo.AnexoBO;
+import br.edu.utfpr.dv.sireata.model.Anexo;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.Upload;
 import com.vaadin.ui.Upload.Receiver;
 import com.vaadin.ui.Upload.SucceededEvent;
 import com.vaadin.ui.Upload.SucceededListener;
-
-import br.edu.utfpr.dv.sireata.bo.AnexoBO;
-import br.edu.utfpr.dv.sireata.model.Anexo;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class EditarAnexoWindow extends EditarWindow {
 

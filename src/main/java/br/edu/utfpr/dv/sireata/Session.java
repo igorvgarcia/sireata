@@ -1,8 +1,7 @@
 package br.edu.utfpr.dv.sireata;
 
-import com.vaadin.server.VaadinSession;
-
 import br.edu.utfpr.dv.sireata.model.Usuario;
+import com.vaadin.server.VaadinSession;
 
 public class Session {
 	

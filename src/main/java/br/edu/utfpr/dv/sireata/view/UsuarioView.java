@@ -1,19 +1,17 @@
 package br.edu.utfpr.dv.sireata.view;
 
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
+import br.edu.utfpr.dv.sireata.model.Usuario;
+import br.edu.utfpr.dv.sireata.window.EditarUsuarioWindow;
 import com.vaadin.ui.CheckBox;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
-
-import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
-import br.edu.utfpr.dv.sireata.model.Usuario;
-import br.edu.utfpr.dv.sireata.window.EditarUsuarioWindow;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class UsuarioView extends ListView {
 	

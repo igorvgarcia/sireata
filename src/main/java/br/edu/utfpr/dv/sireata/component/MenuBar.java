@@ -1,16 +1,5 @@
 package br.edu.utfpr.dv.sireata.component;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import com.vaadin.server.ThemeResource;
-import com.vaadin.ui.CustomComponent;
-import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.MenuBar.Command;
-import com.vaadin.ui.MenuBar.MenuItem;
-
-import com.vaadin.ui.UI;
-
 import br.edu.utfpr.dv.sireata.Session;
 import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
 import br.edu.utfpr.dv.sireata.view.AtaView;
@@ -23,6 +12,14 @@ import br.edu.utfpr.dv.sireata.window.EditarAtaWindow;
 import br.edu.utfpr.dv.sireata.window.EditarSenhaWindow;
 import br.edu.utfpr.dv.sireata.window.EditarUsuarioWindow;
 import br.edu.utfpr.dv.sireata.window.SobreWindow;
+import com.vaadin.server.ThemeResource;
+import com.vaadin.ui.CustomComponent;
+import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.MenuBar.Command;
+import com.vaadin.ui.MenuBar.MenuItem;
+import com.vaadin.ui.UI;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class MenuBar extends CustomComponent {
 	

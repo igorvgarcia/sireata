@@ -1,12 +1,11 @@
 package br.edu.utfpr.dv.sireata.bo;
 
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import br.edu.utfpr.dv.sireata.dao.ComentarioDAO;
 import br.edu.utfpr.dv.sireata.model.Comentario;
 import br.edu.utfpr.dv.sireata.model.Comentario.SituacaoComentario;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ComentarioBO {
 	

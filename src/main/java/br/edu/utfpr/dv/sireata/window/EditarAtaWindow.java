@@ -1,17 +1,37 @@
 package br.edu.utfpr.dv.sireata.window;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import org.vaadin.dialogs.ConfirmDialog;
-
+import br.edu.utfpr.dv.sireata.Session;
+import br.edu.utfpr.dv.sireata.bo.AnexoBO;
+import br.edu.utfpr.dv.sireata.bo.AtaBO;
+import br.edu.utfpr.dv.sireata.bo.AtaParticipanteBO;
+import br.edu.utfpr.dv.sireata.bo.CampusBO;
+import br.edu.utfpr.dv.sireata.bo.DepartamentoBO;
+import br.edu.utfpr.dv.sireata.bo.OrgaoBO;
+import br.edu.utfpr.dv.sireata.bo.PautaBO;
+import br.edu.utfpr.dv.sireata.component.ComboCampus;
+import br.edu.utfpr.dv.sireata.component.ComboCampus.TipoFiltro;
+import br.edu.utfpr.dv.sireata.component.ComboDepartamento;
+import br.edu.utfpr.dv.sireata.component.ComboOrgao;
+import br.edu.utfpr.dv.sireata.component.ComboUsuario;
+import br.edu.utfpr.dv.sireata.model.Anexo;
+import br.edu.utfpr.dv.sireata.model.Ata;
+import br.edu.utfpr.dv.sireata.model.Ata.TipoAta;
+import br.edu.utfpr.dv.sireata.model.AtaParticipante;
+import br.edu.utfpr.dv.sireata.model.AtaReport;
+import br.edu.utfpr.dv.sireata.model.Campus;
+import br.edu.utfpr.dv.sireata.model.Departamento;
+import br.edu.utfpr.dv.sireata.model.Orgao;
+import br.edu.utfpr.dv.sireata.model.OrgaoMembro;
+import br.edu.utfpr.dv.sireata.model.Pauta;
+import br.edu.utfpr.dv.sireata.model.Usuario;
+import br.edu.utfpr.dv.sireata.util.DateUtils;
+import br.edu.utfpr.dv.sireata.view.ListView;
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.shared.ui.datefield.Resolution;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.DateField;
 import com.vaadin.ui.Grid;
 import com.vaadin.ui.HorizontalLayout;
@@ -22,35 +42,12 @@ import com.vaadin.ui.TextArea;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
-import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.themes.ValoTheme;
-
-import br.edu.utfpr.dv.sireata.Session;
-import br.edu.utfpr.dv.sireata.bo.AnexoBO;
-import br.edu.utfpr.dv.sireata.bo.AtaBO;
-import br.edu.utfpr.dv.sireata.bo.AtaParticipanteBO;
-import br.edu.utfpr.dv.sireata.bo.CampusBO;
-import br.edu.utfpr.dv.sireata.bo.DepartamentoBO;
-import br.edu.utfpr.dv.sireata.bo.OrgaoBO;
-import br.edu.utfpr.dv.sireata.bo.PautaBO;
-import br.edu.utfpr.dv.sireata.component.ComboCampus;
-import br.edu.utfpr.dv.sireata.component.ComboDepartamento;
-import br.edu.utfpr.dv.sireata.component.ComboOrgao;
-import br.edu.utfpr.dv.sireata.component.ComboUsuario;
-import br.edu.utfpr.dv.sireata.component.ComboCampus.TipoFiltro;
-import br.edu.utfpr.dv.sireata.model.Anexo;
-import br.edu.utfpr.dv.sireata.model.Ata;
-import br.edu.utfpr.dv.sireata.model.Campus;
-import br.edu.utfpr.dv.sireata.model.Departamento;
-import br.edu.utfpr.dv.sireata.model.Orgao;
-import br.edu.utfpr.dv.sireata.model.OrgaoMembro;
-import br.edu.utfpr.dv.sireata.model.Pauta;
-import br.edu.utfpr.dv.sireata.model.Ata.TipoAta;
-import br.edu.utfpr.dv.sireata.model.AtaParticipante;
-import br.edu.utfpr.dv.sireata.model.AtaReport;
-import br.edu.utfpr.dv.sireata.model.Usuario;
-import br.edu.utfpr.dv.sireata.util.DateUtils;
-import br.edu.utfpr.dv.sireata.view.ListView;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.vaadin.dialogs.ConfirmDialog;
 
 public class EditarAtaWindow extends EditarWindow {
 	

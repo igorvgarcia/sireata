@@ -1,12 +1,5 @@
 package br.edu.utfpr.dv.sireata.util;
 
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
-import org.bouncycastle.jcajce.provider.digest.SHA3;
-import org.bouncycastle.util.encoders.Hex;
-
 import br.com.caelum.stella.inwords.InteiroSemFormato;
 import br.com.caelum.stella.inwords.NumericToWordsConverter;
 

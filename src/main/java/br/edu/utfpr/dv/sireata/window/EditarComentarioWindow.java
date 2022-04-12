@@ -1,18 +1,16 @@
 package br.edu.utfpr.dv.sireata.window;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import com.vaadin.ui.NativeSelect;
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.TextArea;
-
 import br.edu.utfpr.dv.sireata.Session;
 import br.edu.utfpr.dv.sireata.bo.AtaBO;
 import br.edu.utfpr.dv.sireata.bo.ComentarioBO;
 import br.edu.utfpr.dv.sireata.model.Ata;
 import br.edu.utfpr.dv.sireata.model.Comentario;
 import br.edu.utfpr.dv.sireata.model.Comentario.SituacaoComentario;
+import com.vaadin.ui.NativeSelect;
+import com.vaadin.ui.Notification;
+import com.vaadin.ui.TextArea;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class EditarComentarioWindow extends EditarWindow {
 	

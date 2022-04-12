@@ -1,12 +1,11 @@
 package br.edu.utfpr.dv.sireata.ldap;
 
+import br.edu.utfpr.dv.sireata.dao.ConnectionDAO;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import br.edu.utfpr.dv.sireata.dao.ConnectionDAO;
 
 public class LdapConfig {
 	

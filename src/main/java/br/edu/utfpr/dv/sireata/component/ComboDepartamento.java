@@ -1,15 +1,13 @@
 package br.edu.utfpr.dv.sireata.component;
 
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import com.vaadin.ui.NativeSelect;
-
 import br.edu.utfpr.dv.sireata.Session;
 import br.edu.utfpr.dv.sireata.bo.DepartamentoBO;
 import br.edu.utfpr.dv.sireata.component.ComboCampus.TipoFiltro;
 import br.edu.utfpr.dv.sireata.model.Departamento;
+import com.vaadin.ui.NativeSelect;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ComboDepartamento extends NativeSelect {
 

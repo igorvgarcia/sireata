@@ -1,20 +1,18 @@
 package br.edu.utfpr.dv.sireata.view;
 
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import com.vaadin.data.Property.ValueChangeEvent;
-import com.vaadin.data.Property.ValueChangeListener;
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.UI;
-
 import br.edu.utfpr.dv.sireata.bo.OrgaoBO;
 import br.edu.utfpr.dv.sireata.component.ComboCampus;
 import br.edu.utfpr.dv.sireata.component.ComboCampus.TipoFiltro;
 import br.edu.utfpr.dv.sireata.component.ComboDepartamento;
 import br.edu.utfpr.dv.sireata.model.Orgao;
 import br.edu.utfpr.dv.sireata.window.EditarOrgaoWindow;
+import com.vaadin.data.Property.ValueChangeEvent;
+import com.vaadin.data.Property.ValueChangeListener;
+import com.vaadin.ui.Notification;
+import com.vaadin.ui.UI;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class OrgaoView extends ListView {
 	

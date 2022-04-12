@@ -1,14 +1,15 @@
 package br.edu.utfpr.dv.sireata.view;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import br.edu.utfpr.dv.sireata.Session;
+import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
+import br.edu.utfpr.dv.sireata.model.Usuario;
 import com.vaadin.event.ShortcutAction.KeyCode;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Notification;
@@ -16,13 +17,9 @@ import com.vaadin.ui.Panel;
 import com.vaadin.ui.PasswordField;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
-
-import br.edu.utfpr.dv.sireata.Session;
-import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
-import br.edu.utfpr.dv.sireata.model.Usuario;
-
-import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.themes.ValoTheme;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class LoginView extends CustomComponent implements View {
 	

@@ -1,7 +1,7 @@
 package br.edu.utfpr.dv.sireata.view;
 
-import java.util.UUID;
-
+import br.edu.utfpr.dv.sireata.Session;
+import br.edu.utfpr.dv.sireata.component.SideMenu;
 import com.vaadin.navigator.View;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.ComponentContainer;
@@ -11,9 +11,7 @@ import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
-
-import br.edu.utfpr.dv.sireata.Session;
-import br.edu.utfpr.dv.sireata.component.SideMenu;
+import java.util.UUID;
 
 public abstract class BasicView extends CustomComponent implements View {
 	

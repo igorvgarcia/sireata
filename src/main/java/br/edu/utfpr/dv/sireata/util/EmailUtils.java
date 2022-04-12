@@ -1,8 +1,8 @@
 package br.edu.utfpr.dv.sireata.util;
 
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 

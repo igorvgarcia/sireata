@@ -1,11 +1,10 @@
 package br.edu.utfpr.dv.sireata.bo;
 
+import br.edu.utfpr.dv.sireata.dao.PautaDAO;
+import br.edu.utfpr.dv.sireata.model.Pauta;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import br.edu.utfpr.dv.sireata.dao.PautaDAO;
-import br.edu.utfpr.dv.sireata.model.Pauta;
 
 public class PautaBO {
 	

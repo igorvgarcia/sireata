@@ -1,17 +1,15 @@
 package br.edu.utfpr.dv.sireata.view;
 
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.UI;
-
 import br.edu.utfpr.dv.sireata.bo.DepartamentoBO;
 import br.edu.utfpr.dv.sireata.component.ComboCampus;
 import br.edu.utfpr.dv.sireata.component.ComboCampus.TipoFiltro;
 import br.edu.utfpr.dv.sireata.model.Departamento;
 import br.edu.utfpr.dv.sireata.window.EditarDepartamentoWindow;
+import com.vaadin.ui.Notification;
+import com.vaadin.ui.UI;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DepartamentoView extends ListView {
 

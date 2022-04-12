@@ -1,15 +1,13 @@
 package br.edu.utfpr.dv.sireata.window;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import com.vaadin.ui.CheckBox;
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.TextField;
-
 import br.edu.utfpr.dv.sireata.bo.AtaParticipanteBO;
 import br.edu.utfpr.dv.sireata.component.ComboUsuario;
 import br.edu.utfpr.dv.sireata.model.AtaParticipante;
+import com.vaadin.ui.CheckBox;
+import com.vaadin.ui.Notification;
+import com.vaadin.ui.TextField;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class EditarParticipanteWindow extends EditarWindow {
 

@@ -1,8 +1,10 @@
 package br.edu.utfpr.dv.sireata.window;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import br.edu.utfpr.dv.sireata.Session;
+import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
+import br.edu.utfpr.dv.sireata.model.Usuario;
+import br.edu.utfpr.dv.sireata.util.StringUtils;
+import br.edu.utfpr.dv.sireata.view.ListView;
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.ui.CheckBox;
@@ -10,12 +12,8 @@ import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
-
-import br.edu.utfpr.dv.sireata.Session;
-import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
-import br.edu.utfpr.dv.sireata.model.Usuario;
-import br.edu.utfpr.dv.sireata.util.StringUtils;
-import br.edu.utfpr.dv.sireata.view.ListView;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class EditarUsuarioWindow extends EditarWindow {
 	

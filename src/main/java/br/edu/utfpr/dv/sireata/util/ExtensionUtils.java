@@ -1,13 +1,11 @@
 package br.edu.utfpr.dv.sireata.util;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-
 import com.vaadin.server.Extension;
 import com.vaadin.server.FileDownloader;
 import com.vaadin.server.StreamResource;
 import com.vaadin.ui.AbstractComponent;
-import com.vaadin.ui.Button;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 
 public class ExtensionUtils {
 

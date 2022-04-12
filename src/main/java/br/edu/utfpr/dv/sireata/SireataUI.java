@@ -1,17 +1,5 @@
 package br.edu.utfpr.dv.sireata;
 
-import javax.servlet.annotation.WebServlet;
-
-import com.vaadin.annotations.Theme;
-import com.vaadin.annotations.VaadinServletConfiguration;
-import com.vaadin.navigator.Navigator;
-import com.vaadin.navigator.ViewChangeListener;
-import com.vaadin.server.Page;
-import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinServlet;
-
-import com.vaadin.ui.UI;
-
 import br.edu.utfpr.dv.sireata.view.AtaPublicadaView;
 import br.edu.utfpr.dv.sireata.view.AtaView;
 import br.edu.utfpr.dv.sireata.view.CampusView;
@@ -21,6 +9,15 @@ import br.edu.utfpr.dv.sireata.view.MainView;
 import br.edu.utfpr.dv.sireata.view.OrgaoView;
 import br.edu.utfpr.dv.sireata.view.PDFView;
 import br.edu.utfpr.dv.sireata.view.UsuarioView;
+import com.vaadin.annotations.Theme;
+import com.vaadin.annotations.VaadinServletConfiguration;
+import com.vaadin.navigator.Navigator;
+import com.vaadin.navigator.ViewChangeListener;
+import com.vaadin.server.Page;
+import com.vaadin.server.VaadinRequest;
+import com.vaadin.server.VaadinServlet;
+import com.vaadin.ui.UI;
+import javax.servlet.annotation.WebServlet;
 
 @SuppressWarnings("serial")
 @Theme("facebook")

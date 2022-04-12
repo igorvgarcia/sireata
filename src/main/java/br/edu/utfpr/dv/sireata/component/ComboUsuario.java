@@ -1,13 +1,11 @@
 package br.edu.utfpr.dv.sireata.component;
 
+import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
+import br.edu.utfpr.dv.sireata.model.Usuario;
+import com.vaadin.ui.ComboBox;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import com.vaadin.ui.ComboBox;
-
-import br.edu.utfpr.dv.sireata.bo.UsuarioBO;
-import br.edu.utfpr.dv.sireata.model.Usuario;
 
 public class ComboUsuario extends ComboBox {
 	

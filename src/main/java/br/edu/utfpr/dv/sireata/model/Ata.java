@@ -1,11 +1,10 @@
 package br.edu.utfpr.dv.sireata.model;
 
+import br.edu.utfpr.dv.sireata.util.DateUtils;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-
-import br.edu.utfpr.dv.sireata.util.DateUtils;
 
 public class Ata {
 	

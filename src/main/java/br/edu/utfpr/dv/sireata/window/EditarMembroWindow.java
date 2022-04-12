@@ -1,13 +1,11 @@
 package br.edu.utfpr.dv.sireata.window;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.TextField;
-
 import br.edu.utfpr.dv.sireata.component.ComboUsuario;
 import br.edu.utfpr.dv.sireata.model.OrgaoMembro;
+import com.vaadin.ui.Notification;
+import com.vaadin.ui.TextField;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class EditarMembroWindow extends EditarWindow {
 	

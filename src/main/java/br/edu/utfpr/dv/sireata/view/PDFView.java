@@ -1,16 +1,14 @@
 package br.edu.utfpr.dv.sireata.view;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-
+import br.edu.utfpr.dv.sireata.Session;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.server.StreamResource;
 import com.vaadin.server.StreamResource.StreamSource;
 import com.vaadin.ui.BrowserFrame;
 import com.vaadin.ui.CustomComponent;
-
-import br.edu.utfpr.dv.sireata.Session;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 
 public class PDFView extends CustomComponent implements View {
 	

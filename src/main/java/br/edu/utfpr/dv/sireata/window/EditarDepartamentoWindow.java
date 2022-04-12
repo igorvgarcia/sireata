@@ -1,15 +1,10 @@
 package br.edu.utfpr.dv.sireata.window;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import br.edu.utfpr.dv.sireata.bo.DepartamentoBO;
+import br.edu.utfpr.dv.sireata.component.ComboCampus;
+import br.edu.utfpr.dv.sireata.component.ComboCampus.TipoFiltro;
+import br.edu.utfpr.dv.sireata.model.Departamento;
+import br.edu.utfpr.dv.sireata.view.ListView;
 import com.vaadin.server.StreamResource;
 import com.vaadin.ui.CheckBox;
 import com.vaadin.ui.HorizontalLayout;
@@ -20,12 +15,15 @@ import com.vaadin.ui.Upload;
 import com.vaadin.ui.Upload.Receiver;
 import com.vaadin.ui.Upload.SucceededEvent;
 import com.vaadin.ui.Upload.SucceededListener;
-
-import br.edu.utfpr.dv.sireata.bo.DepartamentoBO;
-import br.edu.utfpr.dv.sireata.component.ComboCampus;
-import br.edu.utfpr.dv.sireata.component.ComboCampus.TipoFiltro;
-import br.edu.utfpr.dv.sireata.model.Departamento;
-import br.edu.utfpr.dv.sireata.view.ListView;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class EditarDepartamentoWindow extends EditarWindow {
 	

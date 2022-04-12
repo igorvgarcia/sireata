@@ -1,19 +1,17 @@
 package br.edu.utfpr.dv.sireata.bo;
 
+import br.edu.utfpr.dv.sireata.dao.UsuarioDAO;
+import br.edu.utfpr.dv.sireata.ldap.LdapConfig;
+import br.edu.utfpr.dv.sireata.ldap.LdapUtils;
+import br.edu.utfpr.dv.sireata.model.Usuario;
+import br.edu.utfpr.dv.sireata.util.StringUtils;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import javax.naming.CommunicationException;
-
-import br.edu.utfpr.dv.sireata.dao.UsuarioDAO;
-import br.edu.utfpr.dv.sireata.ldap.LdapConfig;
-import br.edu.utfpr.dv.sireata.ldap.LdapUtils;
-import br.edu.utfpr.dv.sireata.model.Usuario;
-import br.edu.utfpr.dv.sireata.util.StringUtils;
 
 public class UsuarioBO {
 	
