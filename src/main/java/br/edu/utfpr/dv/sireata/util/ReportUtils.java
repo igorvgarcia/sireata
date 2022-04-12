@@ -95,11 +95,9 @@ public class ReportUtils {
     }
     
     private void executeReport(String templatePath, List beanCollection, OutputStream outputStream) throws JRException {
-        //JasperDesign jasperDesign = this.loadTemplate(this.baseReportsPath + templatePath + ".jrxml");
         setTempDirectory(templatePath);
         JasperReport jasperReport = (JasperReport)JRLoader.loadObject(this.getClass().getClassLoader().getResource("br/edu/utfpr/dv/sireata/report/" + templatePath + ".jasper"));
-        //JasperReport jasperReport = (JasperReport)JRLoader.loadObjectFromFile(this.baseReportsPath + templatePath + ".jasper");
-        //JasperReport jasperReport = this.compileReport(jasperDesign);
+        
         JasperPrint jasperPrint = fillReport(jasperReport, beanCollection);
         exportReportToPdf(jasperPrint, outputStream);
     }
